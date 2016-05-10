@@ -1,0 +1,31 @@
+{
+  "name": "gulp-jade-jsx",
+  "version": "1.0.0",
+  "description": "Gulp plugin for transform jade to jsx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuemenglong@126.com",
+  "license": "ISC",
+  "dependencies": {
+    "jade-jsx": "^1.0.3",
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "gulp",
+    "jade",
+    "jsx",
+    "transform"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuemenglong/gulp-jade-jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuemenglong/gulp-jade-jsx/issues"
+  },
+  "homepage": "https://github.com/yuemenglong/gulp-jade-jsx#readme"
+}
