@@ -1,6 +1,7 @@
 var gutil = require('gulp-util');
 var through = require('through2');
 var jadeToJsx = require("jade-jsx");
+var path = require("path");
 
 module.exports = function(fn) {
     return through.obj(function(file, enc, cb) {
@@ -12,7 +13,7 @@ module.exports = function(fn) {
             this.emit('error', new gutil.PluginError(PLUGIN_NAME, 'Streaming not supported'));
             return cb();
         }
-        var content = jadeToJsx(file.contents.toString(), fn);
+        var content = jadeToJsx(file.contents.toString(), fn, path.parse(file.history[0]).dir);
         file.contents = new Buffer(content);
         this.push(file);
         return cb();
