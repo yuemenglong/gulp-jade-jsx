@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "gulp-util": "^3.0.7",
-    "jade-jsx": "^1.0.8",
+    "jade-jsx": "^1.0.10",
     "through2": "^2.0.1"
   },
   "devDependencies": {
