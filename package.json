@@ -1,6 +1,6 @@
 {
   "name": "gulp-jade-jsx",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Gulp plugin for transform jade to jsx",
   "main": "index.js",
   "scripts": {
