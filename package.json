@@ -9,8 +9,9 @@
   "author": "yuemenglong@126.com",
   "license": "ISC",
   "dependencies": {
-    "jade-jsx": "^1.0.3",
     "gulp-util": "^3.0.7",
+    "jade-jsx": "^1.0.3",
+    "lodash": "^4.13.1",
     "through2": "^2.0.1"
   },
   "devDependencies": {},
