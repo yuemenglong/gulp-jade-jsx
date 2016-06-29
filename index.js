@@ -1,10 +1,11 @@
 var gutil = require('gulp-util');
 var through = require('through2');
 var jadeToJsx = require("jade-jsx");
+var path = require("path");
 var util = require("util");
 var _ = require("lodash");
 
-module.exports = function(options) {
+module.exports = function(fn) {
     return through.obj(function(file, enc, cb) {
         if (file.isNull()) {
             this.push(file);
@@ -15,7 +16,7 @@ module.exports = function(options) {
             return cb();
         }
         try {
-            var content = jadeToJsx(file.contents.toString());
+            var content = jadeToJsx(file.contents.toString(), fn, path.parse(file.history[0]).dir);
             file.contents = new Buffer(content);
             this.push(file);
             return cb();
@@ -27,6 +28,5 @@ module.exports = function(options) {
             console.error(line);
             throw ex;
         }
-
     });
 };
