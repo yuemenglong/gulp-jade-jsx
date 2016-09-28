@@ -26,7 +26,7 @@ module.exports = function(fn) {
             console.error(line);
             console.error(info);
             console.error(line);
-            throw ex;
+            // throw ex;
         }
     });
 };
